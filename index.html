@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(9, 208, 208, 0.314);
+        }
+        div input{
+            padding: 3px;
+            background-color: aquamarine;
+            border-radius: 8px;
+        }
+        button{
+            padding: 8px;
+            border-radius: 12px;
+            background-color: aquamarine;
+            color:black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover{
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Be Carefull</h1>
+    <h1 id="number">00</h1>
+    <div>
+        <input placeholder="plz Enter number" id="user_input" />
+    </div>   
+        <h3 id="result">------</h3>
+        <span>
+            <button id="start_btn" onclick="start()">start</button><br><br>
+            <button  onclick="stop()">stop</button>
+
+        </span>
+    
+    <script src="timer.js"></script>
+</body>
+</html>
